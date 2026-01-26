@@ -31,7 +31,7 @@ html,
 body {
   height: 100%;
   scroll-behavior: smooth;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Inter", "Josefin Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -44,7 +44,7 @@ h6 {
   margin: 0;
   color: #111111;
   font-weight: 400;
-  font-family: "Play", sans-serif;
+  font-family: "Inter", "Play", sans-serif;
 }
 
 h1 {
@@ -73,7 +73,7 @@ h6 {
 
 p {
   font-size: 16px;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Inter", "Josefin Sans", sans-serif;
   color: #adadad;
   font-weight: 400;
   line-height: 26px;
@@ -1010,6 +1010,7 @@ ol {
 -----------------------*/
 .breadcrumb-option {
   padding-top: 180px;
+  background: #100028;
 }
 
 .breadcrumb__text h2 {
@@ -1818,6 +1819,16 @@ ol {
   margin-bottom: 0;
 }
 
+.contact__widget__item__text a {
+  color: #00bfe7;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.contact__widget__item__text a:hover {
+  color: #ffffff;
+}
+
 /*---------------------
   Contact
 -----------------------*/
@@ -2268,5 +2279,341 @@ ol {
 
   .blog__details__quote {
     padding: 30px 40px 35px 35px;
+  }
+}
+
+/*---------------------
+  Modern Minimal Styles for Yuki Tanaka Portfolio
+-----------------------*/
+
+/* Hero Section - Simple */
+.hero {
+  background: #100028;
+  padding: 150px 0 100px;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+}
+
+.hero__text {
+  text-align: center;
+}
+
+.hero__text span {
+  color: #00bfe7;
+  font-size: 14px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  display: block;
+  opacity: 1;
+  top: 0;
+}
+
+.hero__text h1 {
+  color: #ffffff;
+  font-size: 72px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  line-height: 1.2;
+  opacity: 1;
+  top: 0;
+}
+
+.hero__text h2 {
+  color: #adadad;
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 30px;
+  opacity: 1;
+  top: 0;
+  text-transform: none;
+}
+
+.hero__text p {
+  color: #adadad;
+  font-size: 18px;
+  line-height: 1.8;
+  max-width: 700px;
+  margin: 0 auto 40px;
+  opacity: 1;
+  top: 0;
+}
+
+.hero__links {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.primary-btn.secondary {
+  background: transparent;
+  border: 2px solid #00bfe7;
+}
+
+.primary-btn.secondary:hover {
+  background: #00bfe7;
+  color: #ffffff;
+}
+
+/* About Section */
+.about {
+  background: #0a0018;
+}
+
+.about__summary {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #adadad;
+  text-align: center;
+}
+
+/* Work Section - Card Based */
+.work {
+  background: #100028;
+}
+
+.work__item {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  padding: 40px;
+  margin-bottom: 30px;
+  transition: all 0.3s ease;
+  height: auto !important;
+  width: 100% !important;
+  float: none !important;
+  position: relative;
+}
+
+.work__item:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: #00bfe7;
+  transform: translateY(-5px);
+}
+
+.work__item__content h3 {
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.work__item__meta {
+  color: #00bfe7;
+  font-size: 14px;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.work__item__content p {
+  color: #adadad;
+  line-height: 1.8;
+  margin-bottom: 25px;
+}
+
+.work__item__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.work__item__tags span {
+  background: rgba(0, 191, 231, 0.1);
+  color: #00bfe7;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.work__item__links {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.work__link {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+  transition: all 0.3s;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.work__link:hover {
+  background: #00bfe7;
+  border-color: #00bfe7;
+  color: #ffffff;
+}
+
+.work__link i {
+  font-size: 16px;
+}
+
+/* Experience Section */
+.experience {
+  background: #0a0018;
+}
+
+.experience__timeline {
+  position: relative;
+}
+
+.experience__item {
+  background: rgba(255, 255, 255, 0.02);
+  border-left: 3px solid #00bfe7;
+  padding: 40px;
+  margin-bottom: 40px;
+  border-radius: 0 8px 8px 0;
+  transition: all 0.3s;
+}
+
+.experience__item:hover {
+  background: rgba(255, 255, 255, 0.05);
+  transform: translateX(10px);
+}
+
+.experience__item__header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.experience__item__header h3 {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.experience__item__company {
+  color: #00bfe7;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.experience__item__date {
+  color: #adadad;
+  font-size: 14px;
+  margin-left: auto;
+}
+
+.experience__item__location {
+  color: #adadad;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.experience__item__details {
+  list-style: none;
+  padding: 0;
+}
+
+.experience__item__details li {
+  color: #adadad;
+  line-height: 1.8;
+  margin-bottom: 12px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.experience__item__details li:before {
+  content: "▸";
+  position: absolute;
+  left: 0;
+  color: #00bfe7;
+}
+
+/* Education Section */
+.education {
+  background: #100028;
+}
+
+.education__item {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.02);
+  padding: 40px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.education__item h3 {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.education__institution {
+  color: #00bfe7;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.education__date {
+  color: #adadad;
+  font-size: 14px;
+}
+
+/* Header Logo Simple */
+.header__logo a {
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: 700;
+  text-decoration: none;
+  letter-spacing: 2px;
+}
+
+/* Footer Updates */
+.footer__social {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+}
+
+.footer__social a {
+  color: #adadad;
+  font-size: 20px;
+  transition: all 0.3s;
+}
+
+.footer__social a:hover {
+  color: #00bfe7;
+}
+
+/* Responsive Updates */
+@media (max-width: 768px) {
+  .hero__text h1 {
+    font-size: 48px;
+  }
+  
+  .hero__text h2 {
+    font-size: 20px;
+  }
+  
+  .work__item {
+    padding: 30px 20px;
+  }
+  
+  .experience__item {
+    padding: 30px 20px;
+  }
+  
+  .experience__item__header {
+    flex-direction: column;
+  }
+  
+  .experience__item__date {
+    margin-left: 0;
   }
 }
